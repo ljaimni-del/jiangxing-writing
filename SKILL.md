@@ -1,11 +1,20 @@
 ---
 name: jiangxing-writing
-version: 1.2.0
+version: 1.4.0
 display_name: 匠行内容写作·读者线三闸门
 display_name_en: JiangXing Reader-Line Writing Gates
-description: 读者线驱动的长文写作与三道闸门质检技能。当用户要求写公众号文章、长文、攻略、带货文、盘点、观点文，或要求对已成稿做质检、去AI味、改标题时使用。核心方法：动笔前钉读者帧（决策线四问）→ 按读者想知道的顺序写 → 交稿前自己跑三道闸门（article_qa.py 机械校验 FAIL=0 + LLM 裁判六组 + 零背景读者模型）。适用于任何主题（旅游、装备、本地生活、教育、职场等），不限平台。
-description_zh: 读者线驱动的长文写作与三道闸门质检技能：动笔前钉读者帧（读者是谁、卡在哪个决策、最怕哪种失败、替他拍哪个板），按读者想知道的顺序写，交稿前跑机械校验器（article_qa.py）到 FAIL=0，再过 LLM 裁判与零背景读者模型两道语义闸门。内置数百轮实战返工沉淀的选题/标题/SEO/结构/文风规则与去AI味清单，适用于任何主题的公众号文章、攻略、带货文与质检改稿。
-description_en: Reader-line driven long-form writing and three-gate QA skill. Nail the reader frame before writing (who is the reader, what decision are they stuck on, what failure do they fear), write in the order the reader wants to know, then run a real mechanical validator (article_qa.py) until FAIL=0, followed by an LLM judge and a zero-context reader model. Encodes hundreds of rounds of real editorial rework into rules for topic selection, titles, SEO, structure and style. Works for WeChat articles, guides, product roundups and QA passes on any topic.
+description: "读者线驱动的长文写作与三道闸门质检技能。当用户要求写公众号文章、长文、攻略、带货文、盘点、观点文，或要求对已成稿做质检、去AI味、改标题时使用。核心方法：动笔前钉读者帧（决策线四问）→ 按读者想知道的顺序写 → 交稿前自己跑三道闸门（article_qa.py 机械校验 FAIL=0 + LLM 裁判六组 + 零背景读者模型）。适用于任何主题（旅游、装备、本地生活、教育、职场等），不限平台。"
+description_zh: "AI 写文章最难的从来不是通顺，是读者愿不愿意往下读。这套技能把数百篇真实发布、数百轮逐字返工沉淀成一条可执行的流水线：动笔前钉读者帧（谁在看／卡在哪个决策／最怕什么），按读者想知道的顺序写；交稿前真跑机械校验器 article_qa.py（30+ 项检查，FAIL>0 不放行），再过 LLM 六组裁判、病句六病型全文扫描与零背景读者模型，每改一处必复跑。选题、标题、SEO、段落、文风、去 AI 味规则全部内置，任何主题的公众号长文、攻略、带货文都能用，也支持只对成稿做质检改稿。"
+description_en: "The hard part of AI writing is not fluency, it is whether a real reader keeps reading. This skill turns hundreds of published articles and hundreds of line-by-line rewrites into one enforceable pipeline - fix the reader frame first, write in the order the reader wants to know, then run a real mechanical validator (article_qa.py, 30+ checks, no delivery while FAIL>0), an LLM judge, a scan for six recurring sentence defects and a zero-context reader model, re-running checks after every edit. Rules for topics, titles, SEO, paragraphs, voice and de-AI-ing are built in. Works for long-form articles, guides, product roundups and QA passes on any topic."
+examples_zh:
+  - "写一篇新疆冬季装备避坑的公众号长文，交稿前把三道闸门全部跑给我看"
+  - "只质检这篇成稿：按病句六病型扫全文，逐条报位置和改法，改完复跑机检"
+  - "六个标题别只换名词，按担心、风险、好奇、反常识、结果重写并说明点击理由"
+examples_en:
+  - "Write a long-form guide with reader-line structure and show me all three QA gates before delivery"
+  - "QA only: scan this draft for the six recurring sentence defects, report each with a fix, then re-run the validator"
+  - "Rewrite six headlines by click reason (worry, risk, curiosity, counter-intuition, outcome), not by swapping nouns"
+author: "匠行旅行"
 ---
 
 # 匠行内容写作 · 读者线三闸门（v1.4 · 2026-11-06）
